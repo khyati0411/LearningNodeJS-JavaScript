@@ -24,6 +24,12 @@ while (count < 3) {
   console.log(z); // Accessible here
   count++;
 }
+
+let required = true;
+while (required) {
+  console.log(required); // Accessible here
+  required = false; // Change the condition to exit the loop
+}
 // console.log(z); // Error: z is not defined, because z is block scoped
 
 //do while loop with block scope using let
@@ -36,3 +42,24 @@ do {
   num++;
 } while (num < 3);
 // console.log(w); // Error: w is not defined, because w is block scoped
+
+//for loop with block scope using let
+
+/* for loop will be executed until the condition is false */
+for (let i = 0; i < 3; i++) {
+  let v = i * 3;
+  console.log(v); // Accessible here
+}
+
+//2 & 5
+//from 1 to 10 give me common multiples of 2 and 5
+let n = 0;
+for (let i = 1; i <= 100; i++) {
+  if (i % 2 === 0 && i % 5 === 0) {
+    n++;
+    console.log(i);
+  }
+  if (n==3) {
+    break;
+  }
+}
