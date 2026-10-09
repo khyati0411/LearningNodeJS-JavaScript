@@ -22,6 +22,7 @@ console.log(e)
 console.log(typeof e)
 
 let f=undefined
+// let f = 5 // (uncommenting this line will throw an error because f is already declared in the same scope)
 console.log(f)
 console.log(typeof f)
 
@@ -37,3 +38,7 @@ console.log(d)
 const g = 10
 console.log(g)
 //g = 20 // (reassigning g will throw an error because it is a constant variable)
+
+//summary of the differences between let, var and const
+//let is block scoped, var is function scoped, const is block scoped
+//let can be updated but not redeclared, var can be updated and redeclared, const cannot be updated or redeclared
