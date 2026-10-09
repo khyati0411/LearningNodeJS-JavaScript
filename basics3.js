@@ -125,3 +125,26 @@ var totalEvenScoresMultiplied = scores.filter(function (score) {
 }, 0);
 //var totalEvenScoresMultiplied = scores.filter(score => score % 2 == 0).map(score => score * 3).reduce((sum, score) => sum + score, 0);
 console.log(totalEvenScoresMultiplied);
+
+//sort
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+//sort the fruits array in ascending order
+fruits.sort(); //this sort method only works for strings, for numbers you need to use a compare function
+console.log(fruits);
+//reverse the fruits array
+fruits.reverse();
+console.log(fruits);
+
+var scores = [85, 92, 77, 96, 88];
+//sort the scores array in ascending order
+scores.sort(function (a, b) {
+  return a - b;
+});
+//scores.sort((a, b) => a - b); //this sort method works for numbers, it takes a compare function as an argument
+console.log(scores);
+//sort the scores array in descending order
+scores.sort(function (a, b) {
+  return b - a;
+});
+//scores.sort((a, b) => b - a); //this sort method works for numbers, it takes a compare function as an argument
+console.log(scores);
