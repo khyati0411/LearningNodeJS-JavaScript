@@ -10,6 +10,10 @@ module.exports = class Person {
         return `${this.firstName} ${this.lastName}`; // this will return the actual firstName and lastName values
     }
 
+    get location() {
+        return 'New York'; // this will return the actual location value
+    }
+
     //constuctor is a special method that is called when an object is created from a class. It is used to initialize the properties of the object.
     /* here, the constructor is used to initialize the age, firstName and lastName properties of the Person class. When a new object is created from the Person class, 
     the constructor is called and the properties are initialized to their default values. */ 
@@ -33,3 +37,4 @@ module.exports = class Person {
 // console.log(person1.lastName) // Doe
 // console.log(person1.fullname) // John Doe //this will call the getter method of the person1 object and return the actual firstName and lastName values
 // console.log(person1.fullname()) // John Doe //this will call the fullname method of the person1 object and return the actual firstName and lastName values
+// console.log(person1.location) // New York //this will call the getter method of the person1 object and return the actual location value
