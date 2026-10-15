@@ -1,4 +1,5 @@
-class Person {
+//exporting the Person class so that it can be imported and used in other files. The module.exports statement is used to export the Person class from this file.
+module.exports = class Person {
     age;
     firstName;
     lastName;  
@@ -26,9 +27,9 @@ class Person {
     }
 }
 
-let person1 = new Person("John", "Doe", 30);
-console.log(person1.age) // 30
-console.log(person1.firstName) // John
-console.log(person1.lastName) // Doe
-console.log(person1.fullname) // John Doe //this will call the getter method of the person1 object and return the actual firstName and lastName values
-console.log(person1.fullname()) // John Doe //this will call the fullname method of the person1 object and return the actual firstName and lastName values
+// let person1 = new Person("John", "Doe", 30);
+// console.log(person1.age) // 30
+// console.log(person1.firstName) // John
+// console.log(person1.lastName) // Doe
+// console.log(person1.fullname) // John Doe //this will call the getter method of the person1 object and return the actual firstName and lastName values
+// console.log(person1.fullname()) // John Doe //this will call the fullname method of the person1 object and return the actual firstName and lastName values

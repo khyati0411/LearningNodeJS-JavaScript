@@ -1,3 +1,9 @@
+//importing the Person class from basics7.js
+const Person = require('./basics7.js');
+
+let person1 = new Person("John", "Doe", 30); //creating a new object of the Person class
+console.log(person1.fullname()) // John Doe //this will call the fullname method of the person1 object and return the actual firstName and lastName values
+
 let day = 'tuesday ';
 console.log(day.length);
 
